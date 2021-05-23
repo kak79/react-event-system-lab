@@ -10,12 +10,16 @@ class Keypad extends React.Component {
     }
   }
 
+  onKeyUpHandler() {
+    console.log('Entering password')
+  }
+
   render() {
     return(
       <input type="password" 
              name="password" 
              value={this.state.password.value} 
-             onKeyUp={this.} 
+             onKeyUp={this.onKeyUpHandler} 
       /> 
     );
   }
